@@ -14,8 +14,15 @@ npm run lint     # run ESLint (flat config via eslint.config.mjs)
 
 There are no tests configured yet.
 
-## Architecture
+## Code style
+- Always use server components by default; add `"use client"` only when
+  a component needs state, effects, or browser APIs.
 
+## Workflow rules
+- Ask before installing a new dependency.
+
+## Architecture
+- Prefer Drizzle over Prisma when adding an ORM.
 This is a **Next.js 16** app using the **App Router** with React 19, TypeScript, and Tailwind CSS v4. Source lives under `src/app/` (the `@/*` alias resolves to `./src/*`).
 
 ### Next.js 16 API differences from earlier versions
