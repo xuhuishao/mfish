@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# knowledge base (local data, never committed)
+/kb/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
